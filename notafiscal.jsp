@@ -51,7 +51,7 @@
       } else if (par == 'excluir'){  
      
          if (document.cadastro.nf_codigoField.value == ''){  
-            document.cadastro.statusField.value = 'Preencha o campo nome';  
+            document.cadastro.statusField.value = 'Preencha o campo codigo';  
          }else {  
             document.cadastro.action='excluir_notafiscal.jsp';  
             document.cadastro.submit();  
