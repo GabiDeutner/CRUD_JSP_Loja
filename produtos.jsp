@@ -144,10 +144,10 @@ pro_ipi
         <p> <strong>Codigo Tipo Produto:</strong>  
       <input name="tpp_codigoField" type="text" id="tpp_codigoField" size="" value="<%=(tpp_codigo==null)?"":tpp_codigo%>">  
          
-         <p> <strong>Preço de Custo:</strong>  
+         <p> <strong>Preco de Custo:</strong>  
       <input name="pro_precocustoField" type="text" id="pro_precocustoField" size="" value="<%=(pro_precocusto==null)?"":pro_precocusto%>">  
 
-             <p> <strong>Preço de Venda:</strong>  
+             <p> <strong>Preco de Venda:</strong>  
       <input name="pro_precovendaField" type="text" id="pro_precovendaField" size="" value="<%=(pro_precovenda==null)?"":pro_precovenda%>">  
 
        <p> <strong>Estoque:</strong>  
