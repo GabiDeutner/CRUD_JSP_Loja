@@ -107,7 +107,7 @@ String status = request.getParameter("status");
       <input name="cp_valorcontaField" type="text" id="cp_valorcontaField" size="" value="<%=(cp_valorconta==null)?"":cp_valorconta%>">  
         <p> <strong> Data de Vencimento :</strong>  
       <input name="cp_datavencimentoField" type="text" id="cp_datavencimentoField" size="" value="<%=(cp_datavencimento==null)?"":cp_datavencimento%>">  
-         <p> <strong> Data de Recebimento:</strong>  
+         <p> <strong> Data de Pagamento:</strong>  
       <input name="cp_datapagamentoField" type="text" id="cp_datapagamentoField" size="" value="<%=(cp_datapagamento==null)?"":cp_datapagamento%>">  
          <p> <strong> Codigo Nota Fiscal:</strong>  
       <input name="nf_codigoField" type="text" id="nf_codigoField" size="" value="<%=(nf_codigo==null)?"":nf_codigo%>">      
