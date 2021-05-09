@@ -18,11 +18,11 @@ function enviar(par){
         document.cadastro.statusField.value = 'Preencha o campo valor da conta';  
      }else if (document.cadastro.cp_datavencimentoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo data de vencimento';  
-     }else if (document.cadastro.cp_datapagamento.value == ''){  
+     }else if (document.cadastro.cp_datapagamentoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo data de pagamento';
      }else if (document.cadastro.nf_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da nota fiscal';
-     }else if (document.cadastro.cp_observacoes.value == ''){  
+     }else if (document.cadastro.cp_observacoesField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo observacoes';      
      }else {  
         document.cadastro.action='cadastrar_contapagar.jsp';  
@@ -46,11 +46,11 @@ function enviar(par){
         document.cadastro.statusField.value = 'Preencha o campo valor da conta';  
      }else if (document.cadastro.cp_datavencimentoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo data de vencimento';  
-     }else if (document.cadastro.cp_datapagamento.value == ''){  
+     }else if (document.cadastro.cp_datapagamentoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo data de pagamento';
      }else if (document.cadastro.nf_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da nota fiscal';
-     }else if (document.cadastro.cp_observacoes.value == ''){  
+     }else if (document.cadastro.cp_observacoesField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo observacoes'; 
      }else {  
         document.cadastro.action='alterar_contapagar.jsp';  
