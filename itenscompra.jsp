@@ -159,7 +159,7 @@ String status = request.getParameter("status");
       <p> <strong> Quantidade:</strong>  
       <input name="itc_qtdeField" type="text" id="itc_qtdeField" size="" value="<%=(itc_qtde==null)?"":itc_qtde%>"> 
 
-      <p> <strong> Valor Unitário:</strong>  
+      <p> <strong> Valor Unitario:</strong>  
       <input name="itc_valorunField" type="text" id="itc_valorunField" size="" value="<%=(itc_valorun==null)?"":itc_valorun%>"> 
 
       <p> <strong> Desconto:</strong>  
