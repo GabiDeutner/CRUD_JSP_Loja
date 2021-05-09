@@ -3,7 +3,7 @@
   
 <html>  
 <head><center>  
-<title>Tabela Contas a Pagar</title>  
+<title>Tabela Fornecedor</title>  
   
   
 <script>  
@@ -29,7 +29,7 @@ function enviar(par){
     }else if (document.cadastro.for_cnpjcpfField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo cnpjcpf';
     }else if (document.cadastro.for_rgieField.value == ''){  
-        document.cadastro.statusField.value = 'Preencha o campo rgie';
+        document.cadastro.statusField.value = 'Preencha o campo rg';
     }else if (document.cadastro.for_telefoneField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo telefone';
     }else if (document.cadastro.for_faxField.value == ''){  
@@ -37,7 +37,7 @@ function enviar(par){
     }else if (document.cadastro.for_celularField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo celular';
     }else if (document.cadastro.for_emailField.value == ''){  
-        document.cadastro.statusField.value = 'Preencha o campo email';      
+        document.cadastro.statusField.value = 'Preencha o campo e-mail';      
      }else {  
         document.cadastro.action='cadastrar_fornecedor.jsp';  
         document.cadastro.submit();  
@@ -79,7 +79,7 @@ function enviar(par){
     }else if (document.cadastro.for_celularField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo celular';
     }else if (document.cadastro.for_emailField.value == ''){  
-        document.cadastro.statusField.value = 'Preencha o campo email';
+        document.cadastro.statusField.value = 'Preencha o campo e-mail';
      }else {  
         document.cadastro.action='alterar_fornecedor.jsp';  
         document.cadastro.submit();  
@@ -114,7 +114,7 @@ function enviar(par){
 
 <%  
 String for_codigo = request.getParameter("for_codigo");  
-String for_valorconta = request.getParameter("for_nome");  
+String for_nome = request.getParameter("for_nome");  
 String for_endereco = request.getParameter("for_endereco");  
 String for_numero = request.getParameter("for_numero");
 String for_bairro = request.getParameter("for_bairro");
@@ -134,7 +134,7 @@ String status = request.getParameter("status");
  
 <table width="" border="">  
  <tr>  
-   <td width="" height="" bgcolor="red"><p align="left" class="style"> Cadastro Contas a Pagar </p>  
+   <td width="" height="" bgcolor="red"><p align="left" class="style"> Cadastro Fornecedor </p>  
    </td>  
  </tr>  
  <tr>  
