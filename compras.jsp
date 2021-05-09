@@ -16,11 +16,11 @@ function enviar(par){
         document.cadastro.statusField.value = 'Preencha o campo codigo da compra';  
      }else if (document.cadastro.tpg_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo do tipo de pagamento';  
-     }else if (document.cadastro.for_codigo.value == ''){  
+     }else if (document.cadastro.for_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo do fornecedor';  
      }else if (document.cadastro.nf_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da nota fiscal';
-     }else if (document.cadastro.com_datacompra.value == ''){  
+     }else if (document.cadastro.com_datacompraField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da data da compra';
      }else if (document.cadastro.com_valortotalField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo valor total';
@@ -46,11 +46,11 @@ function enviar(par){
         document.cadastro.statusField.value = 'Preencha o campo codigo da compra';  
      }else if (document.cadastro.tpg_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo do tipo de pagamento';  
-     }else if (document.cadastro.for_codigo.value == ''){  
+     }else if (document.cadastro.for_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo do fornecedor';  
      }else if (document.cadastro.nf_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da nota fiscal';
-     }else if (document.cadastro.com_datacompra.value == ''){  
+     }else if (document.cadastro.com_datacompraField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da data da compra';
      }else if (document.cadastro.com_valortotalField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo valor total';
