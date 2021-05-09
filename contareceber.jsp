@@ -109,9 +109,9 @@ String status = request.getParameter("status");
       <input name="cr_datavencimentoField" type="text" id="cr_datavencimentoField" size="" value="<%=(cr_datavencimento==null)?"":cr_datavencimento%>">  
          <p> <strong> Data de Recebimento:</strong>  
       <input name="cr_datarecebimentoField" type="text" id="cr_datarecebimentoField" size="" value="<%=(cr_datarecebimento==null)?"":cr_datarecebimento%>">  
-         <p> <strong> Data de Recebimento:</strong>  
+         <p> <strong> Codigo Nota Fiscal:</strong>  
       <input name="nf_codigoField" type="text" id="nf_codigoField" size="" value="<%=(nf_codigo==null)?"":nf_codigo%>">      
-         <p> <strong> Data de Recebimento:</strong>  
+         <p> <strong> Observacoes:</strong>  
       <input name="cr_observacoesField" type="text" id="cr_observacoesField" size="" value="<%=(cr_observacoes==null)?"":cr_observacoes%>">  
         </p>      
   </td>  
