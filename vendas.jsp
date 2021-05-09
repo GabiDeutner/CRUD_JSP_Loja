@@ -44,13 +44,13 @@ function enviar(par){
  
     if (document.cadastro.ven_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da venda';  
-     }else if (document.cadastro.fun_codigo.value == ''){  
+     }else if (document.cadastro.fun_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo do funcionario';  
      }else if (document.cadastro.tpg_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo do tipo de pagamento';  
      }else if (document.cadastro.nf_codigoField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da nota fiscal';
-     }else if (document.cadastro.ven_datavenda.value == ''){  
+     }else if (document.cadastro.ven_datavendaField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo codigo da data da venda';
      }else if (document.cadastro.ven_valortotalField.value == ''){  
         document.cadastro.statusField.value = 'Preencha o campo valor total';
