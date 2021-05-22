@@ -34,9 +34,9 @@
     try {  
    
        con.setNf_codigo(Integer.parseInt(request.getParameter("nf_codigoField")));  
-       con.setNf_valornf(request.getParameter("nf_valornfField")));  
-	   con.setNf_taxaimpostonf(request.getParameter("nf_taxaimpostonfField")));  
-	   con.setNf_valorimposto(request.getParameter("nf_valorimpostoField")));  
+       con.setNf_valornf(request.getParameter("nf_valornfField"));  
+	   con.setNf_taxaimpostonf(request.getParameter("nf_taxaimpostonfField"));  
+	   con.setNf_valorimposto(request.getParameter("nf_valorimpostoField"));  
        con.inserirDados();  
                   
        con.setConsulta();  
