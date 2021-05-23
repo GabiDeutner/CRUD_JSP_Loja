@@ -21,8 +21,8 @@
              temp.getString("cr_codigo")+
 			 "&cr_valorconta="+temp.getString("cr_valorconta")+
 			 "&cr_datavencimento="+temp.getString("cr_datavencimento")+
-			 "&cr_datarecebimento="+temp.getString("cr_datarecebimento"));
-             "&nf_codigo="+temp.getString("nf_codigo")); 
+			 "&cr_datarecebimento="+temp.getString("cr_datarecebimento")+
+             "&nf_codigo="+temp.getString("nf_codigo")+ 
              "&cr_observacoes="+temp.getString("cr_observacoes"));   
        }else{  
           response.sendRedirect("http://localhost:8084/sistema_loja_noturno/contareceber.jsp?status=Registro nao encontrado");  
