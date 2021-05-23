@@ -64,7 +64,7 @@
        </tr>  
           <%}  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/notafiscal.jsp?status=Registro n�o encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/notafiscal.jsp?status=Registro nao encontrado");  
        }     
     }catch (Exception e) {  
        e.printStackTrace();  
