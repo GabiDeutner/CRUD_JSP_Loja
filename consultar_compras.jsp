@@ -21,9 +21,9 @@
              temp.getString("com_codigo")+
 			 "&tpg_codigo="+temp.getString("tpg_codigo")+
 			 "&for_codigo="+temp.getString("for_codigo")+
-			 "&nf_codigo="+temp.getString("nf_codigo"));
-             "&com_datacompra="+temp.getString("com_datacompra")); 
-             "&com_valortotal="+temp.getString("com_valortotal"));
+			 "&nf_codigo="+temp.getString("nf_codigo")+
+             "&com_datacompra="+temp.getString("com_datacompra")+ 
+             "&com_valortotal="+temp.getString("com_valortotal")+
              "&com_observacoes="+temp.getString("com_observacoes"));    
        }else{  
           response.sendRedirect("http://localhost:8084/sistema_loja_noturno/compras.jsp?status=Registro nao encontrado");  
