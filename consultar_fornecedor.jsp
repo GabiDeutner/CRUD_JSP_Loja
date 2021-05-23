@@ -21,15 +21,15 @@
              temp.getString("for_codigo")+
 			 "&for_nome="+temp.getString("for_nome")+
 			 "&for_endereco="+temp.getString("for_endereco")+
-			 "&for_numero="+temp.getString("for_numero"));
-             "&for_bairro="+temp.getString("for_bairro")); 
-             "&for_cidade="+temp.getString("for_cidade"));
-             "&for_uf="+temp.getString("for_uf"));
-             "&for_cnpjcpf="+temp.getString("for_cnpjcpf"));
-             "&for_rgie="+temp.getString("for_rgie"));
-             "&for_telefone="+temp.getString("for_telefone"));
-             "&for_fax="+temp.getString("for_fax"));
-             "&for_celular="+temp.getString("for_celular"));
+			 "&for_numero="+temp.getString("for_numero")+
+             "&for_bairro="+temp.getString("for_bairro")+
+             "&for_cidade="+temp.getString("for_cidade")+
+             "&for_uf="+temp.getString("for_uf")+
+             "&for_cnpjcpf="+temp.getString("for_cnpjcpf")+
+             "&for_rgie="+temp.getString("for_rgie")+
+             "&for_telefone="+temp.getString("for_telefone")+
+             "&for_fax="+temp.getString("for_fax")+
+             "&for_celular="+temp.getString("for_celular")+
              "&for_email="+temp.getString("for_email"));   
        }else{  
           response.sendRedirect("http://localhost:8084/sistema_loja_noturno/fornecedor.jsp?status=Registro nao encontrado");  
