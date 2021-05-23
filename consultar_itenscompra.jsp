@@ -21,14 +21,14 @@
              temp.getString("itenscompra_codigo")+
 			 "&com_codigo="+temp.getString("com_codigo")+
 			 "&pro_codigo="+temp.getString("pro_codigo")+
-			 "&tpp_codigo="+temp.getString("tpp_codigo"));
-             "&nf_codigo="+temp.getString("nf_codigo")); 
-             "&for_codigo="+temp.getString("for_codigo"));
-             "&tpg_codigo="+temp.getString("tpg_codigo"));    
-             "&itc_embalagem="+temp.getString("itc_embalagem"));  
-             "&itc_qtde="+temp.getString("itc_qtde"));  
-             "&itc_valorun="+temp.getString("itc_valorun"));  
-             "&itc_desc="+temp.getString("itc_desc"));  
+			 "&tpp_codigo="+temp.getString("tpp_codigo")+
+             "&nf_codigo="+temp.getString("nf_codigo")+
+             "&for_codigo="+temp.getString("for_codigo")+
+             "&tpg_codigo="+temp.getString("tpg_codigo")+    
+             "&itc_embalagem="+temp.getString("itc_embalagem")+  
+             "&itc_qtde="+temp.getString("itc_qtde")+  
+             "&itc_valorun="+temp.getString("itc_valorun")+  
+             "&itc_desc="+temp.getString("itc_desc")+  
              "&itc_valortotal="+temp.getString("itc_valortotal"));  
        }else{  
           response.sendRedirect("http://localhost:8084/sistema_loja_noturno/itenscompra.jsp?status=Registro nao encontrado");  
