@@ -15,7 +15,7 @@
 <jsp:setProperty name="con" property="cp_valorconta" value='<%=(request.getParameter("cp_valorcontaField"))%>'/>   
 <jsp:setProperty name="con" property="cp_datavencimento" value='<%=(request.getParameter("cp_datavencimentoField"))%>'/>   
 <jsp:setProperty name="con" property="cp_datapagamento" value='<%=(request.getParameter("cp_datapagamentoField"))%>'/>   
-<jsp:setProperty name="con" property="nf_codigo" value='<%=(request.getParameter("nf_codigoField"))%>'/>   
+<jsp:setProperty name="con" property="nf_codigo" value='<%=Integer.parseInt(request.getParameter("nf_codigoField"))%>'/>   
 <jsp:setProperty name="con" property="cp_observacoes" value='<%=(request.getParameter("cp_observacoesField"))%>'/>           
 
 <p><strong>Tabela Conta Pagar </strong></p>  
