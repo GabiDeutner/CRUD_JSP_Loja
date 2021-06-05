@@ -58,12 +58,12 @@
    try {  
   
       con.setItensvenda_codigo(Integer.parseInt(request.getParameter("itensvenda_codigoField")));  
-      con.setVen_codigo(request.getParameter("ven_codigoField"));  
-      con.setPro_codigo(request.getParameter("pro_codigoField"));  
-      con.setTpp_codigo(request.getParameter("tpp_codigoField"));
-      con.setNf_codigo(request.getParameter("nf_codigoField"));  
-      con.setTpg_codigo(request.getParameter("tpg_codigoField")); 
-      con.setFun_codigo(request.getParameter("fun_codigoField"));   
+      con.setVen_codigo(Integer.parseInt(request.getParameter("ven_codigoField")));  
+      con.setPro_codigo(Integer.parseInt(request.getParameter("pro_codigoField")));  
+      con.setTpp_codigo(Integer.parseInt(request.getParameter("tpp_codigoField")));
+      con.setNf_codigo(Integer.parseInt(request.getParameter("nf_codigoField")));  
+      con.setTpg_codigo(Integer.parseInt(request.getParameter("tpg_codigoField"))); 
+      con.setFun_codigo(Integer.parseInt(request.getParameter("fun_codigoField")));   
       con.setItv_embalagem(request.getParameter("itv_embalagemField"));   
       con.setItv_qtde(request.getParameter("itv_qtdeField"));   
       con.setItv_valorun(request.getParameter("itv_valorunField"));   
