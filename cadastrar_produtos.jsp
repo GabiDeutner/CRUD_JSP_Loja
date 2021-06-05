@@ -47,7 +47,7 @@
   
       con.setPro_codigo(Integer.parseInt(request.getParameter("pro_codigoField")));  
       con.setPro_descricao(request.getParameter("pro_descricaoField"));  
-      con.setTpp_codigo(request.getParameter("tpp_codigoField"));  
+      con.setTpp_codigo(Integer.parseInt(request.getParameter("tpp_codigoField")));  
       con.setPro_precocusto(request.getParameter("pro_precocustoField")); 
       con.setPro_precovenda(request.getParameter("pro_precovendaField"));  
       con.setPro_estoque(request.getParameter("pro_estoqueField"));  
