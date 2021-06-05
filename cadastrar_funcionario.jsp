@@ -70,7 +70,7 @@
    try {  
   
       con.setFun_codigo(Integer.parseInt(request.getParameter("fun_codigoField")));  
-      con.setFun_nome(request.getParameter("fun_nome"));  
+      con.setFun_nome(request.getParameter("fun_nomeField"));  
       con.setFun_endereco(request.getParameter("fun_enderecoField"));  
       con.setFun_numero(request.getParameter("fun_numeroField"));
       con.setFun_complemento(request.getParameter("fun_complementoField"));
