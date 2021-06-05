@@ -13,7 +13,7 @@
   
 <jsp:setProperty name="con" property="pro_codigo" value='<%=Integer.parseInt(request.getParameter("pro_codigoField"))%>'/>  
 <jsp:setProperty name="con" property="pro_descricao" value='<%=(request.getParameter("pro_descricaoField"))%>'/>   
-<jsp:setProperty name="con" property="tpp_codigo" value='<%=(request.getParameter("tpp_codigoField"))%>'/>   
+<jsp:setProperty name="con" property="tpp_codigo" value='<%=Integer.parseInt(request.getParameter("tpp_codigoField"))%>'/>   
 <jsp:setProperty name="con" property="pro_precocusto" value='<%=(request.getParameter("pro_precocustoField"))%>'/>   
 <jsp:setProperty name="con" property="pro_precovenda" value='<%=(request.getParameter("pro_precovendaField"))%>'/>   
 <jsp:setProperty name="con" property="pro_estoque" value='<%=(request.getParameter("pro_estoqueField"))%>'/>   
