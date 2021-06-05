@@ -40,10 +40,10 @@
    try {  
   
       con.setCp_codigo(Integer.parseInt(request.getParameter("cp_codigoField")));  
-      con.setCp_valorconta(request.getParameter("cp_valorconta"));  
+      con.setCp_valorconta(request.getParameter("cp_valorcontaField"));  
       con.setCp_datavencimento(request.getParameter("cp_datavencimentoField"));  
       con.setCp_datapagamento(request.getParameter("cp_datapagamentoField"));
-      con.setNf_codigo(request.getParameter("nf_codigoField"));  
+      con.setNf_codigo(Integer.parseInt(request.getParameter("nf_codigoField")));  
       con.setCp_observacoes(request.getParameter("cp_observacoesField"));   
       con.inserirDados();  
                  
