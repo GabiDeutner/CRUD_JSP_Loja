@@ -12,9 +12,9 @@
 <form name="form1" method="post" action="vendas.jsp">  
   
 <jsp:setProperty name="con" property="ven_codigo" value='<%=Integer.parseInt(request.getParameter("ven_codigoField"))%>'/>  
-<jsp:setProperty name="con" property="fun_codigo" value='<%=(request.getParameter("fun_codigoField"))%>'/>   
-<jsp:setProperty name="con" property="tpg_codigo" value='<%=(request.getParameter("tpg_codigoField"))%>'/>   
-<jsp:setProperty name="con" property="nf_codigo" value='<%=(request.getParameter("nf_codigoField"))%>'/>   
+<jsp:setProperty name="con" property="fun_codigo" value='<%=Integer.parseInt(request.getParameter("fun_codigoField"))%>'/>   
+<jsp:setProperty name="con" property="tpg_codigo" value='<%=Integer.parseInt(request.getParameter("tpg_codigoField"))%>'/>   
+<jsp:setProperty name="con" property="nf_codigo" value='<%=Integer.parseInt(request.getParameter("nf_codigoField"))%>'/>   
 <jsp:setProperty name="con" property="ven_datavenda" value='<%=(request.getParameter("ven_datavendaField"))%>'/>   
 <jsp:setProperty name="con" property="ven_valortotal" value='<%=(request.getParameter("ven_valortotalField"))%>'/>           
 <jsp:setProperty name="con" property="ven_observacoes" value='<%=(request.getParameter("ven_observacoesField"))%>'/>           
