@@ -43,9 +43,9 @@
    try {  
   
       con.setVen_codigo(Integer.parseInt(request.getParameter("ven_codigoField")));  
-      con.setFun_codigo(request.getParameter("fun_codigoField"));  
-      con.setTpg_codigo(request.getParameter("tpg_codigoField"));  
-      con.setNf_codigo(request.getParameter("nf_codigoField"));
+      con.setFun_codigo(Integer.parseInt(request.getParameter("fun_codigoField")));  
+      con.setTpg_codigo(Integer.parseInt(request.getParameter("tpg_codigoField")));  
+      con.setNf_codigo(Integer.parseInt(request.getParameter("nf_codigoField")));
       con.setVen_datavenda(request.getParameter("ven_datavendaField"));  
       con.setVen_valortotal(request.getParameter("ven_valortotalField")); 
       con.setVen_observacoes(request.getParameter("ven_observacoesField"));   
