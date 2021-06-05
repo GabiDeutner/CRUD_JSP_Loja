@@ -43,7 +43,7 @@
        con.setCr_valorconta(request.getParameter("cr_valorcontaField"));  
 	     con.setCr_datavencimento(request.getParameter("cr_datavencimentoField"));  
 	     con.setCr_datarecebimento(request.getParameter("cr_datarecebimentoField")); 
-       con.setNf_codigo(request.getParameter("nf_codigoField"));  
+       con.setNf_codigo(Integer.parseInt(request.getParameter("nf_codigoField")));  
        con.setCr_observacoes(request.getParameter("cr_observacoesField")); 
        con.inserirDados();  
                   
