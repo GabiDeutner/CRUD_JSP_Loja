@@ -61,7 +61,7 @@
    try {  
   
       con.setFor_codigo(Integer.parseInt(request.getParameter("for_codigoField")));  
-      con.setFor_nome(request.getParameter("for_nome"));  
+      con.setFor_nome(request.getParameter("for_nomeField"));  
       con.setFor_endereco(request.getParameter("for_enderecoField"));  
       con.setFor_numero(request.getParameter("for_numeroField"));
       con.setFor_bairro(request.getParameter("for_bairroField"));
