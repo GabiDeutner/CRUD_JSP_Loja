@@ -14,47 +14,47 @@
 <p><strong>Tabela Fornecedor </strong></p>  
 <table border=1 cellspacing=0 cellpadding=0 >  
   
-    <tr>  
-        <td width=50><strong>  
-          Codigo 
-       </strong></td>      
-       <td width=50><strong>  
-          Nome
-       </strong></td>    
-       <td width=50><strong>  
-          Endereco
-       </strong></td>    
-       <td width=50><strong>  
-          Numero 
-       </strong></td>
-       <td width=50><strong>  
-          Bairro 
-        </strong></td>  
-        <td width=50><strong>  
-          Cidade  
-        </strong></td> 
-        <td width=50><strong>  
-            UF 
-          </strong></td> 
-          <td width=50><strong>  
-            CNPJCPF  
-          </strong></td> 
-          <td width=50><strong>  
-            RGIE  
-          </strong></td> 
-          <td width=50><strong>  
-            Telefone  
-          </strong></td> 
-          <td width=50><strong>  
-            Fax  
-          </strong></td> 
-          <td width=50><strong>  
-            Celular  
-          </strong></td> 
-          <td width=50><strong>  
-            E-mail  
-          </strong></td>        
-       </tr>  
+   <tr>  
+     <td width=50>
+       <strong>  Codigo </strong>
+     </td> 
+     <td width=50>
+       <strong>  Nome </strong>
+     </td>      
+     <td width=50>
+       <strong>  Endereco </strong>
+     </td>         
+     <td width=50>
+       <strong>  Numero </strong>
+     </td>  
+     <td width=50>
+       <strong>  Bairro </strong>
+     </td> 
+     <td width=50>
+       <strong>  Cidade  </strong>
+     </td>  
+     <td width=50>
+       <strong>  UF  </strong>
+     </td>   
+     <td width=50>
+       <strong>  CNPJCPF </strong>
+     </td> 
+     <td width=50>
+       <strong>  RGIE </strong>
+     </td>
+     <td width=50>
+       <strong>  Telefone </strong>
+     </td>
+     <td width=50>
+       <strong>  Fax </strong>
+     </td>
+     <td width=50>
+       <strong>  Celular </strong>
+     </td>
+     <td width=50>
+       <strong>  E-mail </strong>
+     </td>
+   </tr>  
   
   
 <%      
@@ -69,54 +69,51 @@
         
          while (temp.next()){  
          %>  
-         <tr>  
-            <td width=50>  
-                 <%out.print(temp.getString("for_codigo"));%>  
-           </td>  
-            <td width=50>  
+          <tr>  
+             <td width=50>  
+               <%out.print(temp.getString("for_codigo"));%>  
+             </td> 
+             <td width=50>  
                  <%out.print(temp.getString("for_nome"));%>  
-           </td>  
-            <td width=50>  
+             </td>  
+             <td width=50>  
                  <%out.print(temp.getString("for_endereco"));%>  
-           </td>  
-            <td width=50>  
+             </td> 
+             <td width=50>  
                  <%out.print(temp.getString("for_numero"));%>  
-           </td>  
-           <td width=50>  
-                 <%out.print(temp.getString("nf_codigo"));%>  
-          </td>  
-          <td width=50>  
+             </td>  
+             <td width=50>  
                  <%out.print(temp.getString("for_bairro"));%>  
-          </td>  
-          <td width=50>  
-              <%out.print(temp.getString("for_cidade"));%>  
-          </td>  
-          <td width=50>  
-              <%out.print(temp.getString("for_uf"));%>  
-          </td>  
-          <td width=50>  
-              <%out.print(temp.getString("for_cnpjcpf"));%>  
-          </td>  
-          <td width=50>  
-              <%out.print(temp.getString("for_rgie"));%>  
-          </td>  
-          <td width=50>  
-              <%out.print(temp.getString("for_telefone"));%>  
-          </td>  
-          <td width=50>  
-              <%out.print(temp.getString("for_fax"));%>  
-          </td>  
-          <td width=50>  
-              <%out.print(temp.getString("for_celular"));%>  
-          </td>  
-          <td width=50>  
-              <%out.print(temp.getString("for_email"));%>  
-          </td>  
-      </tr>  
+             </td> 
+             <td width=50>  
+                 <%out.print(temp.getString("for_cidade"));%>  
+             </td> 
+             <td width=50>  
+                 <%out.print(temp.getString("for_uf"));%>  
+             </td> 
+             <td width=50>  
+                 <%out.print(temp.getString("for_cnpjcpf"));%>  
+             </td> 
+             <td width=50>  
+                 <%out.print(temp.getString("for_rgie"));%>  
+             </td>
+             <td width=50>  
+                 <%out.print(temp.getString("for_telefone"));%>  
+             </td>
+             <td width=50>  
+                 <%out.print(temp.getString("for_fax"));%>  
+             </td>
+             <td width=50>  
+                 <%out.print(temp.getString("for_celular"));%>  
+             </td>
+             <td width=50>  
+                 <%out.print(temp.getString("for_email"));%>  
+             </td>   
+         </tr>  
          <%}  
       }  
       else{  
-         response.sendRedirect("http://localhost:8084/sistema_loja_noturno/fornecedor.jsp?status=Registro nao encontrado");  
+         response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/fornecedor.jsp?status=Registro não encontrado");  
       }     
    }catch (Exception e) {  
       e.printStackTrace();  
