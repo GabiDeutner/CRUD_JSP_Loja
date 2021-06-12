@@ -1,5 +1,5 @@
 <%@ page contentType="text/html" language="java" import="java.sql.*"%>  
- <jsp:useBean id="con" class="conexao_tipopagto.Conexao_tipopagto"/>  
+<jsp:useBean id="con" class="conexao_tipopagto.Conexao_tipopagto"/>   
    
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
 
@@ -17,13 +17,13 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipopagto.jsp?status=Consulta efetuada com sucesso&tpg_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipopagto.jsp?status=Consulta efetuada com sucesso&tpg_codigo="+  
              temp.getString("tpg_codigo")+
-			 "&tpg_descricao="+temp.getString("tpg_descricao")+
-			 "&tpg_qtde="+temp.getString("tpg_qtde")+
-			 "&tpg_ativo="+temp.getString("tpg_ativo"));  
+      			 "&tpg_descricao="+temp.getString("tpg_descricao")+
+             "&tpg_qtde="+temp.getString("tpg_qtde")+
+      			 "&tpg_ativo="+temp.getString("tpg_ativo"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipopagto.jsp?status=Registro nao encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipopagto.jsp?status=Registro não encontrado");  
        }  
             
                
