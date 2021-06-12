@@ -142,7 +142,7 @@ op3[1] = new CriaMenu("Itens Compras",null,"itenscompra.jsp");
 
 
 var op2 = new Array(2);
-op2[0] = new CriaMenu("Funcionários",null,"funcionario.jsp");
+op2[0] = new CriaMenu("Funcionarios",null,"funcionario.jsp");
 op2[1] = new CriaMenu("Fornecedores",null,"fornecedor.jsp");
 
 
@@ -157,7 +157,7 @@ op[0] = new CriaMenu("Fiscal",op1,null);
 op[1] = new CriaMenu("Contatos",op2,null);
 op[2] = new CriaMenu("Pagamentos",op3,null);
 op[3] = new CriaMenu("Recebidos",op4,null);
-op[4] = new CriaMenu("Produção",op5,null);
+op[4] = new CriaMenu("Producao",op5,null);
 
 
 build_menu(1,op)
