@@ -17,13 +17,13 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/notafiscal.jsp?status=Consulta efetuada com sucesso&nf_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/notafiscal.jsp?status=Consulta efetuada com sucesso&nf_codigo="+  
              temp.getString("nf_codigo")+
 			 "&nf_valornf="+temp.getString("nf_valornf")+
 			 "&nf_taxaimpostonf="+temp.getString("nf_taxaimpostonf")+
 			 "&nf_valorimposto="+temp.getString("nf_valorimposto"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/notafiscal.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/notafiscal.jsp?status=Registro nï¿½o encontrado");  
        }  
             
                
