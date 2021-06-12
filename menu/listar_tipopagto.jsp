@@ -14,20 +14,20 @@
   <p><strong>Tabela Tipo Pagamento </strong></p>  
 <table border=1 cellspacing=0 cellpadding=0 >  
   
-    <tr>  
-        <td width=50><strong>  
-          Codigo 
-       </strong></td>      
-       <td width=50><strong>  
-          Descricao
-       </strong></td>    
-       <td width=50><strong>  
-          Quantidade
-       </strong></td>    
-       <td width=50><strong>  
-          Ativo  
-       </strong></td>      
-       </tr>  
+   <tr>  
+     <td width=50>
+       <strong>  Codigo </strong>
+     </td> 
+     <td width=50>
+       <strong>  Descricao </strong>
+     </td>      
+     <td width=50>
+       <strong>  Quantidade </strong>
+     </td>         
+     <td width=50>
+       <strong>  Ativo </strong>
+     </td>        
+   </tr>  
     
     
   <%      
@@ -38,19 +38,19 @@
         while (temp.next()){  
         %>  
         <tr>  
-            <td width=50>  
-                 <%out.print(temp.getString("tpg_codigo"));%>  
+           <td width=50>  
+               <%out.print(temp.getString("tpg_codigo"));%>  
+           </td> 
+           <td width=50>  
+               <%out.print(temp.getString("tpg_descricao"));%>  
            </td>  
-            <td width=50>  
-                 <%out.print(temp.getString("tpg_descricao"));%>  
-           </td>  
-            <td width=50>  
-                 <%out.print(temp.getString("tpg_qtde"));%>  
-           </td>  
-            <td width=50>  
-                 <%out.print(temp.getString("tpg_ativo"));%>  
-           </td>  
-        </tr>  
+           <td width=50>  
+               <%out.print(temp.getString("tpg_qtde"));%>  
+           </td> 
+           <td width=50>  
+               <%out.print(temp.getString("tpg_ativo"));%>  
+           </td>    
+      </tr>  
         <%}  
        
      }catch (Exception e) {  
