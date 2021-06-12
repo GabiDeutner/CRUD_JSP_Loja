@@ -65,7 +65,7 @@
             }else if (document.cadastro.nf_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o codigo de nota fiscal'; 
             }else if (document.cadastro.cr_observacoesField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha observações';    
+               document.cadastro.statusField.value = 'Preencha observacoes';    
             }else {  
                document.cadastro.action='cadastrar_contareceber.jsp';  
                document.cadastro.submit();  
@@ -153,7 +153,7 @@
              <input name="cr_datarecebimentoField" type="text" id="cr_datarecebimentoField" size="" value="<%=(cr_datarecebimento==null)?"":cr_datarecebimento%>">  
                <p> <strong>Codigo Nota Fiscal :</strong>  
              <input name="nf_codigoField" type="text" id="nf_codigoField" size="" value="<%=(nf_codigo==null)?"":nf_codigo%>"> </p>    
-               <p> <strong>Observações :</strong>  
+               <p> <strong>Observacoes :</strong>  
              <input name="cr_observacoesField" type="text" id="cr_observacoesField" size="" value="<%=(cr_observacoes==null)?"":cr_observacoes%>"> </p> 
          
         
