@@ -14,29 +14,29 @@
   <p><strong>Tabela Compras </strong></p>  
 <table border=1 cellspacing=0 cellpadding=0 >  
   
-    <tr>  
-        <td width=50><strong>  
-          Codigo Compras
-       </strong></td>      
-       <td width=50><strong>  
-          Codigo Tipo Pagamento
-       </strong></td>    
-       <td width=50><strong>  
-          Codigo Fornecedor
-       </strong></td>    
-       <td width=50><strong>  
-          Codigo Nota Fiscal 
-       </strong></td>
-       <td width=50><strong>  
-          Data Compra
-        </strong></td>  
-        <td width=50><strong>  
-          Valor Total  
-        </strong></td>
-        <td width=50><strong>  
-          Observacoes  
-        </strong></td>        
-       </tr>  
+   <tr>  
+     <td width=50>
+       <strong>  Codigo </strong>
+     </td>      
+     <td width=50>
+       <strong>  Codigo Tipo de pagamento </strong>
+     </td>    
+     <td width=50>
+       <strong>  Codigo fornecedor </strong>
+     </td>    
+     <td width=50>
+       <strong>  Codigo Nota Fiscal </strong>
+     </td> 
+     <td width=50>
+       <strong>  Data compra  </strong>
+     </td>  
+     <td width=50>
+       <strong>  Valor total  </strong>
+     </td> 
+     <td width=50>
+       <strong>  Observacoes  </strong>
+     </td>       
+   </tr>  
     
     
   <%      
@@ -47,28 +47,28 @@
         while (temp.next()){  
         %>  
         <tr>  
-            <td width=50>  
-                 <%out.print(temp.getString("com_codigo"));%>  
-           </td>  
-            <td width=50>  
-                 <%out.print(temp.getString("tpg_codigo"));%>  
-           </td>  
-            <td width=50>  
-                 <%out.print(temp.getString("for_codigo"));%>  
-           </td>  
-            <td width=50>  
-                 <%out.print(temp.getString("nf_codigo"));%>  
-           </td>
            <td width=50>  
-              <%out.print(temp.getString("com_datacompra"));%>  
+               <%out.print(temp.getString("com_codigo"));%>  
            </td>  
            <td width=50>  
-              <%out.print(temp.getString("com_valortotal"));%>  
-           </td>
+               <%out.print(temp.getString("tpg_codigo"));%>  
+           </td>  
            <td width=50>  
-              <%out.print(temp.getString("com_observacoes"));%>  
-           </td>       
-        </tr>  
+               <%out.print(temp.getString("for_codigo"));%>  
+           </td>  
+           <td width=50>  
+               <%out.print(temp.getString("nf_codigo"));%>  
+           </td> 
+           <td width=50>  
+               <%out.print(temp.getString("com_datacompra"));%>  
+           </td> 
+           <td width=50>  
+               <%out.print(temp.getString("com_valortotal"));%>  
+           </td> 
+           <td width=50>  
+               <%out.print(temp.getString("com_observacoes"));%>  
+           </td>  
+      </tr>  
         <%}  
        
      }catch (Exception e) {  
