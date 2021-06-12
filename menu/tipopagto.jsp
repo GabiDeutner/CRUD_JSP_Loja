@@ -57,11 +57,11 @@
             if (document.cadastro.tpg_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o campo codigo';  
             }else if (document.cadastro.tpg_descricaoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha a descrição';  
+               document.cadastro.statusField.value = 'Preencha a descricao';  
               }else if (document.cadastro.tpg_qtdeField.value == ''){  
                document.cadastro.statusField.value = 'Preencha a quantidade';  
             }else if (document.cadastro.tpg_ativoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o Ativo';  
+               document.cadastro.statusField.value = 'Preencha o campo ativo';  
             }else {  
                document.cadastro.action='cadastrar_tipopagto.jsp';  
                document.cadastro.submit();  
@@ -85,7 +85,7 @@
             }else if (document.cadastro.tpg_qtdeField.value == ''){  
                document.cadastro.statusField.value = 'Preencha a quantidade';  
             }else if (document.cadastro.tpg_ativoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o Ativo';   
+               document.cadastro.statusField.value = 'Preencha o campo ativo';   
             }else {  
                document.cadastro.action='alterar_tipopagto.jsp';  
                document.cadastro.submit();  
@@ -135,7 +135,7 @@
         <tr>  
           <td height="" bgcolor="red"><p> <strong>Codigo :</strong>  
              <input name="tpg_codigoField" type="text" id="tpg_codigoField" size="" value="<%=(tpg_codigo==null)?"":tpg_codigo%>"> </p>  
-               <p> <strong>Descrição :</strong>  
+               <p> <strong>Descricao :</strong>  
              <input name="tpg_descricaoField" type="text" id="tpg_descricaoField" size="" value="<%=(tpg_descricao==null)?"":tpg_descricao%>">  
                <p> <strong>Quantidade :</strong>  
              <input name="tpg_qtdeField" type="text" id="tpg_qtdeField" size="" value="<%=(tpg_qtde==null)?"":tpg_qtde%>">  
