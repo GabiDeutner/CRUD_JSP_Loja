@@ -17,18 +17,18 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/compras.jsp?status=Consulta efetuada com sucesso&com_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/compras.jsp?status=Consulta efetuada com sucesso&com_codigo="+  
              temp.getString("com_codigo")+
-			 "&tpg_codigo="+temp.getString("tpg_codigo")+
-			 "&for_codigo="+temp.getString("for_codigo")+
-			 "&nf_codigo="+temp.getString("nf_codigo")+
-             "&com_datacompra="+temp.getString("com_datacompra")+ 
+      			 "&tpg_codigo="+temp.getString("tpg_codigo")+
+      			 "&for_codigo="+temp.getString("for_codigo")+
+             "&nf_codigo="+temp.getString("nf_codigo")+
+             "&com_datacompra="+temp.getString("com_datacompra")+
              "&com_valortotal="+temp.getString("com_valortotal")+
-             "&com_observacoes="+temp.getString("com_observacoes"));    
+      			 "&com_observacoes="+temp.getString("com_observacoes"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/compras.jsp?status=Registro nao encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/compras.jsp?status=Registro não encontrado");  
        }  
-       
+            
                
  %>  
  </form>  
