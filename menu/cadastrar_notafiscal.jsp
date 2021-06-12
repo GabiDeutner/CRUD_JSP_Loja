@@ -44,7 +44,7 @@
        temp.next();  
          
        if(request.getParameter("nf_codigoField").equals(temp.getString("nf_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/notafiscal.jsp?status=Registro j� existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/notafiscal.jsp?status=Registro j� existente");  
          
        do{  
        %>  
