@@ -134,7 +134,7 @@
      
    <%  
    String pro_codigo = request.getParameter("pro_codigo");  
-   String pro_descricao = request.getParameter("pro_descricao ");   
+   String pro_descricao = request.getParameter("pro_descricao");   
    String tpp_codigo = request.getParameter("tpp_codigo"); 
    String pro_precocusto = request.getParameter("pro_precocusto");  
    String pro_precovenda = request.getParameter("pro_precovenda"); 
