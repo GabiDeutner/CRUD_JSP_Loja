@@ -100,7 +100,7 @@ public class Conexao_produtos {
      try {  
         String query = "insert into tb_produtos(pro_codigo,pro_descricao,"
                 + "tpp_codigo,pro_precocusto,pro_precovenda,"
-                + "pro_estoque,tpg_ativo) values("+pro_codigo+","
+                + "pro_estoque,pro_embalagem,pro_ipi) values("+pro_codigo+","
                 + " \""+pro_descricao+"\","+tpp_codigo+","
                 + " \""+pro_precocusto+"\",\""+pro_precovenda+"\","
                 + " \""+pro_estoque+"\",\""+pro_embalagem+"\","
@@ -119,12 +119,13 @@ public class Conexao_produtos {
      try {  
         String query = "update tb_produtos "
                 + "set pro_descricao = \""+pro_descricao+"\","
-                + "set tpp_codigo = "+tpp_codigo+","
+                + "tpp_codigo = "+tpp_codigo+","
                 + "pro_precocusto = \""+pro_precocusto+"\","
-                + "pro_precovenda = \""+pro_precovenda+"\" "
-                + "pro_estoque = \""+pro_estoque+"\" "
-                + "pro_embalagem = \""+pro_embalagem+"\" "
-                + "where pro_ipi = "+pro_ipi+" ";  
+                + "pro_precovenda = \""+pro_precovenda+"\","
+                + "pro_estoque = \""+pro_estoque+"\","
+                + "pro_embalagem = \""+pro_embalagem+"\","
+                + "pro_ipi = \""+pro_ipi+"\" "
+                + "where pro_codigo = "+pro_codigo+" ";  
  
         int linhas = stm.executeUpdate(query);  
           
