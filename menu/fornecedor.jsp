@@ -59,9 +59,9 @@
             }else if (document.cadastro.for_nomeField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o nome do fornecedor';  
               }else if (document.cadastro.for_enderecoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o endereço';    
+               document.cadastro.statusField.value = 'Preencha o endereco';    
             }else if (document.cadastro.for_numeroField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o número'; 
+               document.cadastro.statusField.value = 'Preencha o numero'; 
             }else if (document.cadastro.for_bairroField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o Bairro'; 
             }else if (document.cadastro.for_cidadeField.value == ''){  
@@ -101,9 +101,9 @@
             }else if (document.cadastro.for_nomeField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o nome do fornecedor';  
             }else if (document.cadastro.for_enderecoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o endereço';    
+               document.cadastro.statusField.value = 'Preencha o endereco';    
             }else if (document.cadastro.for_numeroField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o número'; 
+               document.cadastro.statusField.value = 'Preencha o numero'; 
             }else if (document.cadastro.for_bairroField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o Bairro'; 
             }else if (document.cadastro.for_cidadeField.value == ''){  
@@ -182,9 +182,9 @@
              <input name="for_codigoField" type="text" id="for_codigoField" size="" value="<%=(for_codigo==null)?"":for_codigo%>"> </p>  
                <p> <strong>Nome :</strong>  
              <input name="for_nomeField" type="text" id="for_nomeField" size="" value="<%=(for_nome==null)?"":for_nome%>">  
-               <p> <strong>Endereço :</strong>  
+               <p> <strong>Endereco :</strong>  
              <input name="for_enderecoField" type="text" id="for_enderecoField" size="" value="<%=(for_endereco==null)?"":for_endereco%>">  
-               <p> <strong>Número :</strong>  
+               <p> <strong>Numero :</strong>  
              <input name="for_numeroField" type="text" id="for_numeroField" size="" value="<%=(for_numero==null)?"":for_numero%>"> </p>  
                <p> <strong>Bairro :</strong>  
              <input name="for_bairroField" type="text" id="for_bairroField" size="" value="<%=(for_bairro==null)?"":for_bairro%>"> </p> 
