@@ -57,11 +57,11 @@
             if (document.cadastro.fun_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o campo codigo';  
             }else if (document.cadastro.fun_nomeField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o nome do funcionário';  
+               document.cadastro.statusField.value = 'Preencha o nome do funcionario';  
               }else if (document.cadastro.fun_enderecoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o endereço';    
+               document.cadastro.statusField.value = 'Preencha o endereco';    
             }else if (document.cadastro.fun_numeroField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o número';
+               document.cadastro.statusField.value = 'Preencha o numero';
             }else if (document.cadastro.fun_complementoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha do complemento'; 
             }else if (document.cadastro.fun_bairroField.value == ''){  
@@ -105,11 +105,11 @@
             if (document.cadastro.fun_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o campo codigo';  
             }else if (document.cadastro.fun_nomeField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o nome do funcionário';  
+               document.cadastro.statusField.value = 'Preencha o nome do funcionario';  
             }else if (document.cadastro.fun_enderecoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o endereço';    
+               document.cadastro.statusField.value = 'Preencha o endereco';    
             }else if (document.cadastro.fun_numeroField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o número';
+               document.cadastro.statusField.value = 'Preencha o numero';
             }else if (document.cadastro.fun_complementoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha do complemento'; 
             }else if (document.cadastro.fun_bairroField.value == ''){  
@@ -133,7 +133,7 @@
             }else if (document.cadastro.fun_emailField.value == ''){  
                document.cadastro.statusField.value = 'Preencha E-mail';   
             }else if (document.cadastro.fun_salarioField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o Salário';       
+               document.cadastro.statusField.value = 'Preencha o Salario';       
             }else {  
                document.cadastro.action='alterar_funcionario.jsp';  
                document.cadastro.submit();  
@@ -189,7 +189,7 @@
         
       <table width="" border="">  
         <tr>  
-          <td width="" height="" bgcolor="red"><p align="left" class="style"> Cadastro Funcionário</p>  
+          <td width="" height="" bgcolor="red"><p align="left" class="style"> Cadastro Funcionario</p>  
           </td>  
         </tr>  
         <tr>  
@@ -197,9 +197,9 @@
              <input name="fun_codigoField" type="text" id="fun_codigoField" size="" value="<%=(fun_codigo==null)?"":fun_codigo%>"> </p>  
                <p> <strong>Nome :</strong>  
              <input name="fun_nomeField" type="text" id="fun_nomeField" size="" value="<%=(fun_nome==null)?"":fun_nome%>">  
-               <p> <strong>Endereço :</strong>  
+               <p> <strong>Endereco :</strong>  
              <input name="fun_enderecoField" type="text" id="fun_enderecoField" size="" value="<%=(fun_endereco==null)?"":fun_endereco%>">  
-               <p> <strong>Número :</strong>
+               <p> <strong>Numero :</strong>
              <input name="fun_numeroField" type="text" id="fun_numeroField" size="" value="<%=(fun_numero==null)?"":fun_numero%>"> </p> 
                <p> <strong>Complemento :</strong>  
              <input name="fun_complementoField" type="text" id="fun_complementoField" size="" value="<%=(fun_complemento==null)?"":fun_complemento%>">   
@@ -223,7 +223,7 @@
              <input name="fun_celularField" type="text" id="fun_celularField" size="" value="<%=(fun_celular==null)?"":fun_celular%>"> </p> 
                <p> <strong>E-mail :</strong>  
              <input name="fun_emailField" type="text" id="fun_emailField" size="" value="<%=(fun_email==null)?"":fun_email%>"> </p>
-               <p> <strong>Salário :</strong>  
+               <p> <strong>Salario :</strong>  
              <input name="fun_salarioField" type="text" id="fun_salarioField" size="" value="<%=(fun_salario==null)?"":fun_salario%>"> </p>
         
                </p>      
