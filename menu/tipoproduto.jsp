@@ -57,7 +57,7 @@
             if (document.cadastro.tpp_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o campo codigo';  
             }else if (document.cadastro.tpp_descricaoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha a descrição';   
+               document.cadastro.statusField.value = 'Preencha a descricao';   
             }else {  
                document.cadastro.action='cadastrar_tipoproduto.jsp';  
                document.cadastro.submit();  
@@ -77,7 +77,7 @@
             if (document.cadastro.tpp_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o campo codigo';  
             }else if (document.cadastro.tpp_descricaoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha a descrição'; 
+               document.cadastro.statusField.value = 'Preencha a descricao'; 
             }else {  
                document.cadastro.action='alterar_tipoproduto.jsp';  
                document.cadastro.submit();  
@@ -125,7 +125,7 @@
         <tr>  
           <td height="" bgcolor="red"><p> <strong>Codigo :</strong>  
              <input name="tpp_codigoField" type="text" id="tpp_codigoField" size="" value="<%=(tpp_codigo==null)?"":tpp_codigo%>"> </p>  
-               <p> <strong>Descrição :</strong>  
+               <p> <strong>Descricao :</strong>  
              <input name="tpp_descricaoField" type="text" id="tpp_descricaoField" size="" value="<%=(tpp_descricao==null)?"":tpp_descricao%>">  
            
                      
