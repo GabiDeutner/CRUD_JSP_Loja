@@ -16,30 +16,31 @@
 <jsp:setProperty name="con" property="cp_datavencimento" value='<%=(request.getParameter("cp_datavencimentoField"))%>'/>   
 <jsp:setProperty name="con" property="cp_datapagamento" value='<%=(request.getParameter("cp_datapagamentoField"))%>'/>   
 <jsp:setProperty name="con" property="nf_codigo" value='<%=Integer.parseInt(request.getParameter("nf_codigoField"))%>'/>   
-<jsp:setProperty name="con" property="cp_observacoes" value='<%=(request.getParameter("cp_observacoesField"))%>'/>           
+<jsp:setProperty name="con" property="cp_observacoes" value='<%=(request.getParameter("cp_observacoesField"))%>'/>   
+
 
 <p><strong>Tabela Conta Pagar </strong></p>  
 <table border=1 cellspacing=0 cellpadding=0 >  
   
    <tr>  
-    <td width=50><strong>  
-      Codigo 
-   </strong></td>      
-   <td width=50><strong>  
-      Valor Conta
-   </strong></td>    
-   <td width=50><strong>  
-      Data Vencimento 
-   </strong></td>    
-   <td width=50><strong>  
-      Data Pagamento  
-   </strong></td>
-   <td width=50><strong>  
-      Codigo 
-    </strong></td>  
-    <td width=50><strong>  
-      Observacoes  
-    </strong></td>        
+     <td width=50>
+       <strong>  Codigo </strong>
+     </td>      
+      <td width=50>
+       <strong>  Valor </strong>
+     </td>    
+      <td width=50>
+       <strong>  Data vencimento </strong>
+     </td>    
+     <td width=50>
+       <strong>  Data Pagamento  </strong>
+     </td>  
+     <td width=50>
+       <strong>  Codigo Nota Fiscal </strong>
+     </td>    
+     <td width=50>
+       <strong>  Observacoes  </strong>
+     </td>     
    </tr>  
   
   
@@ -56,28 +57,28 @@
          while (temp.next()){  
          %>  
          <tr>  
-          <td width=50>  
+           <td width=50>  
                <%out.print(temp.getString("cp_codigo"));%>  
-         </td>  
-          <td width=50>  
+           </td>  
+           <td width=50>  
                <%out.print(temp.getString("cp_valorconta"));%>  
-         </td>  
-          <td width=50>  
+           </td>  
+             <td width=50>  
                <%out.print(temp.getString("cp_datavencimento"));%>  
-         </td>  
-          <td width=50>  
+           </td>  
+             <td width=50>  
                <%out.print(temp.getString("cp_datapagamento"));%>  
-         </td>
-         <td width=50>  
-            <%out.print(temp.getString("nf_codigo"));%>  
-         </td>  
-         <td width=50>  
-            <%out.print(temp.getString("cp_observacoes"));%>  
-         </td>      
-      </tr>  
+           </td> 
+           <td width=50>  
+               <%out.print(temp.getString("nf_codigo"));%>  
+           </td>  
+           <td width=50>  
+               <%out.print(temp.getString("cp_observacoes"));%>  
+           </td>  
+         </tr>  
          <%}  
       }else{  
-         response.sendRedirect("http://localhost:8084/sistema_loja_noturno/contapagar.jsp?status=Registro nao encontrado");  
+         response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/contapagar.jsp?status=Registro não encontrado");  
       }     
    }catch (Exception e) {  
       e.printStackTrace();  
