@@ -63,7 +63,7 @@
             }else if (document.cadastro.tpp_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o codigo do tipo de produto'; 
             }else if (document.cadastro.nf_codigoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o codigo de Nota Fiscal'; 
+               document.cadastro.statusField.value = 'Preencha o codigo de nota fiscal'; 
             }else if (document.cadastro.for_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o codigo de fornecedor';
             }else if (document.cadastro.tpg_codigoField.value == ''){  
@@ -103,7 +103,7 @@
             }else if (document.cadastro.tpp_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o codigo do tipo de produto'; 
             }else if (document.cadastro.nf_codigoField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha o codigo de Nota Fiscal'; 
+               document.cadastro.statusField.value = 'Preencha o codigo de nota fiscal'; 
             }else if (document.cadastro.for_codigoField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o codigo de fornecedor';
             }else if (document.cadastro.tpg_codigoField.value == ''){  
@@ -191,7 +191,7 @@
              <input name="itc_embalagemField" type="text" id="itc_embalagemField" size="" value="<%=(itc_embalagem==null)?"":itc_embalagem%>"> </p>  
                <p> <strong>Quantidade :</strong>  
              <input name="itc_qtdeField" type="text" id="itc_qtdeField" size="" value="<%=(itc_qtde==null)?"":itc_qtde%>">  
-               <p> <strong>Valor Unitário :</strong>  
+               <p> <strong>Valor Unitario :</strong>  
              <input name="itc_valorunField" type="text" id="itc_valorunField" size="" value="<%=(itc_valorun==null)?"":itc_valorun%>">  
                <p> <strong>Desconto :</strong>  
              <input name="itc_descField" type="text" id="itc_descField" size="" value="<%=(itc_desc==null)?"":itc_desc%>"> </p>  
