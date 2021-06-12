@@ -65,7 +65,7 @@
          }else if (document.cadastro.nf_codigoField.value == ''){  
             document.cadastro.statusField.value = 'Preencha o codigo de nota fiscal'; 
          }else if (document.cadastro.cp_observacoesField.value == ''){  
-            document.cadastro.statusField.value = 'Preencha observações';    
+            document.cadastro.statusField.value = 'Preencha observacoes';    
          }else {  
             document.cadastro.action='cadastrar_contapagar.jsp';  
             document.cadastro.submit();  
@@ -93,7 +93,7 @@
          }else if (document.cadastro.nf_codigoField.value == ''){  
             document.cadastro.statusField.value = 'Preencha o codigo de nota fiscal'; 
          }else if (document.cadastro.cp_observacoesField.value == ''){  
-            document.cadastro.statusField.value = 'Preencha observações';    
+            document.cadastro.statusField.value = 'Preencha observacoes';    
          }else {  
             document.cadastro.action='alterar_contapagar.jsp';  
             document.cadastro.submit();  
@@ -153,7 +153,7 @@
           <input name="cp_datapagamentoField" type="text" id="cp_datapagamentoField" size="" value="<%=(cp_datapagamento==null)?"":cp_datapagamento%>">  
             <p> <strong>Codigo Nota Fiscal :</strong>  
           <input name="nf_codigoField" type="text" id="nf_codigoField" size="" value="<%=(nf_codigo==null)?"":nf_codigo%>"> </p>    
-            <p> <strong>Observações :</strong>  
+            <p> <strong>Observacoes :</strong>  
           <input name="cp_observacoesField" type="text" id="cp_observacoesField" size="" value="<%=(cp_observacoes==null)?"":cp_observacoes%>"> </p> 
       
      
