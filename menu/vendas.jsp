@@ -67,7 +67,7 @@
          }else if (document.cadastro.ven_valortotalField.value == ''){  
             document.cadastro.statusField.value = 'Preencha o valor total';
          }else if (document.cadastro.ven_observacoesField.value == ''){  
-            document.cadastro.statusField.value = 'Preencha observações';    
+            document.cadastro.statusField.value = 'Preencha observacoes';    
          }else {  
             document.cadastro.action='cadastrar_vendas.jsp';  
             document.cadastro.submit();  
@@ -97,7 +97,7 @@
          }else if (document.cadastro.ven_valortotalField.value == ''){  
             document.cadastro.statusField.value = 'Preencha o valor total';
          }else if (document.cadastro.ven_observacoesField.value == ''){  
-            document.cadastro.statusField.value = 'Preencha observações';    
+            document.cadastro.statusField.value = 'Preencha observacoes';    
          }else {  
             document.cadastro.action='alterar_vendas.jsp';  
             document.cadastro.submit();  
@@ -160,7 +160,7 @@
           <input name="ven_datavendaField" type="text" id="ven_datavendaField" size="" value="<%=(ven_datavenda==null)?"":ven_datavenda%>"> </p> 
             <p> <strong>Valor Total :</strong>  
           <input name="ven_valortotalField" type="text" id="ven_valortotalField" size="" value="<%=(ven_valortotal==null)?"":ven_valortotal%>"> </p>
-            <p> <strong>Observações :</strong>  
+            <p> <strong>Observacoes :</strong>  
           <input name="ven_observacoesField" type="text" id="ven_observacoesField" size="" value="<%=(ven_observacoes==null)?"":ven_observacoes%>"> </p> 
       
      
