@@ -107,8 +107,8 @@ public void inserirDados(){
      try {  
         String query = "update tb_compras "
                 + "set tpg_codigo = "+tpg_codigo+","
-                + "set for_codigo = "+for_codigo+","
-                + "set nf_codigo = "+nf_codigo+","
+                + "for_codigo = "+for_codigo+","
+                + "nf_codigo = "+nf_codigo+","
                 + "com_datacompra = \""+com_datacompra+"\","
                 + "com_valortotal = \""+com_valortotal+"\","
                 + "com_observacoes = \""+com_observacoes+"\" "
