@@ -109,8 +109,8 @@ public void inserirDados(){
      try {  
         String query = "update tb_vendas "
                 + "set fun_codigo = "+fun_codigo+","
-                + "set tpg_codigo = "+tpg_codigo+","
-                + "set nf_codigo = "+nf_codigo+","
+                + "tpg_codigo = "+tpg_codigo+","
+                + "nf_codigo = "+nf_codigo+","
                 + "ven_datavenda = \""+ven_datavenda+"\","
                 + "ven_valortotal = \""+ven_valortotal+"\","
                 + "ven_observacoes = \""+ven_observacoes+"\" "
@@ -151,7 +151,7 @@ public void inserirDados(){
     boolean testa = false;  
          
     try {  
-       String query = "select * from tb_vendas where com_codigo='"+ven_codigo+"'";  
+       String query = "select * from tb_vendas where ven_codigo='"+ven_codigo+"'";  
        res = stm.executeQuery(query);  
          
        if (res.next()){testa = true;}  
