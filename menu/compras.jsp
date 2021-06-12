@@ -45,7 +45,7 @@
          
        <html>  
        <head><center>  
-       <title>Tabela Compras</title>  
+       <title>Tabela de Compras</title>  
          
          
        <script>  
@@ -67,7 +67,7 @@
             }else if (document.cadastro.com_valortotalField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o valor total';
             }else if (document.cadastro.com_observacoesField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha observações';    
+               document.cadastro.statusField.value = 'Preencha observacoes';    
             }else {  
                document.cadastro.action='cadastrar_compras.jsp';  
                document.cadastro.submit();  
@@ -97,7 +97,7 @@
             }else if (document.cadastro.com_valortotalField.value == ''){  
                document.cadastro.statusField.value = 'Preencha o valor total';
             }else if (document.cadastro.com_observacoesField.value == ''){  
-               document.cadastro.statusField.value = 'Preencha observações';     
+               document.cadastro.statusField.value = 'Preencha observacoes';     
             }else {  
                document.cadastro.action='alterar_compras.jsp';  
                document.cadastro.submit();  
@@ -160,7 +160,7 @@
              <input name="com_datacompraField" type="text" id="com_datacompraField" size="" value="<%=(com_datacompra==null)?"":com_datacompra%>"> </p> 
                <p> <strong>Valor Total :</strong>  
              <input name="com_valortotalField" type="text" id="com_valortotalField" size="" value="<%=(com_valortotal==null)?"":com_valortotal%>"> </p>
-               <p> <strong>Observações :</strong>  
+               <p> <strong>Observacoes :</strong>  
              <input name="com_observacoesField" type="text" id="com_observacoesField" size="" value="<%=(com_observacoes==null)?"":com_observacoes%>"> </p> 
          
         
