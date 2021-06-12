@@ -45,7 +45,7 @@
       
     <html>  
     <head><center>  
-    <title>Tabela Produto</title>  
+    <title>Tabela de Produtos</title>  
       
       
     <script>  
@@ -57,7 +57,7 @@
          if (document.cadastro.pro_codigoField.value == ''){  
             document.cadastro.statusField.value = 'Preencha o campo codigo';  
          }else if (document.cadastro.pro_descricaoField.value == ''){  
-            document.cadastro.statusField.value = 'Preencha a descrição';  
+            document.cadastro.statusField.value = 'Preencha a descricao';  
          }else if (document.cadastro.tpp_codigoField.value == ''){  
             document.cadastro.statusField.value = 'Preencha o codigo do tipo de produto'; 
          }else if (document.cadastro.pro_precocustoField.value == ''){  
@@ -69,7 +69,7 @@
          }else if (document.cadastro.pro_embalagemField.value == ''){  
             document.cadastro.statusField.value = 'Preencha a embalagem';
          }else if (document.cadastro.pro_ipiField.value == ''){  
-            document.cadastro.statusField.value = 'Preencha a IPI'; 
+            document.cadastro.statusField.value = 'Preencha o campo IPI'; 
          }else {  
             document.cadastro.action='cadastrar_produtos.jsp';  
             document.cadastro.submit();  
@@ -101,7 +101,7 @@
          }else if (document.cadastro.pro_embalagemField.value == ''){  
             document.cadastro.statusField.value = 'Preencha a embalagem';
          }else if (document.cadastro.pro_ipiField.value == ''){  
-            document.cadastro.statusField.value = 'Preencha a IPI';       
+            document.cadastro.statusField.value = 'Preencha o campo IPI';       
          }else {  
             document.cadastro.action='alterar_produtos.jsp';  
             document.cadastro.submit();  
@@ -149,19 +149,19 @@
      
    <table width="" border="">  
      <tr>  
-       <td width="" height="" bgcolor="red"><p align="left" class="style"> Cadastro Produtos</p>  
+       <td width="" height="" bgcolor="red"><p align="left" class="style"> Cadastro de Produtos</p>  
        </td>  
      </tr>  
      <tr>  
        <td height="" bgcolor="red"><p> <strong>Codigo :</strong>  
           <input name="pro_codigoField" type="text" id="pro_codigoField" size="" value="<%=(pro_codigo==null)?"":pro_codigo%>"> 
-            <p> <strong>Descrição :</strong>  
+            <p> <strong>Descricao :</strong>  
           <input name="pro_descricaoField" type="text" id="pro_descricaoField" size="" value="<%=(pro_descricao==null)?"":pro_descricao%>">            
             <p> <strong>Codigo Tipo do Produto :</strong>  
           <input name="tpp_codigoField" type="text" id="tpp_codigoField" size="" value="<%=(tpp_codigo==null)?"":tpp_codigo%>"> </p>  
-            <p> <strong>Preço de Custo :</strong>  
+            <p> <strong>Preco de Custo :</strong>  
           <input name="pro_precocustoField" type="text" id="pro_precocustoField" size="" value="<%=(pro_precocusto==null)?"":pro_precocusto%>"> </p>  
-            <p> <strong>Preço de Venda :</strong>  
+            <p> <strong>Preco de Venda :</strong>  
           <input name="pro_precovendaField" type="text" id="pro_precovendaField" size="" value="<%=(pro_precovenda==null)?"":pro_precovenda%>">  
             <p> <strong>Estoque :</strong>  
           <input name="pro_estoqueField" type="text" id="pro_estoqueField" size="" value="<%=(pro_estoque==null)?"":pro_estoque%>">  
